@@ -16,14 +16,16 @@ data:
     request:
       service: NvidiaStats
       method: gpupowerutil
+      transform:
+        gpuPowerRemaining: '{{ gpuPowerLimit - gpuPowerDraw }}'
     label:
       display: true
       formatter: template
-      formatterConfig: "{{ value | tofixed(1) }}W"
+      formatterConfig: "{{ value }}W"
     dataConfig:
-      - label: _("Limit")
-        prop: gpuPowerLimit
-        backgroundColor: "#4cd964"
       - label: _("Usage")
         prop: gpuPowerDraw
         backgroundColor: "#ff3b30"
+      - label: _("Remaining")
+        prop: gpuPowerRemaining
+        backgroundColor: "#4cd964"
