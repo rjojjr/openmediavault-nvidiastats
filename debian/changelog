@@ -3,3 +3,9 @@ openmediavault-nvidiastats (1.0) stable; urgency=low
   * Initial release
 
  -- Routmoute - Sat, 4 January 2025
+
+openmediavault-nvidiastats (1.1) stable; urgency=low
+
+  * Add power widget
+
+ -- rjojjr <rjojjr91@live.com> - Tue, 4 November 2025
