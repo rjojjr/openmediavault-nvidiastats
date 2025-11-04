@@ -1,0 +1,29 @@
+version: "1.0"
+type: dashboard-widget
+data:
+  id: 6dc16d3e-a9bb-4ba9-a916-5dfb426dd97f
+  permissions:
+    role:
+      - admin
+      - user
+  title: _("Nvidia GPU Power")
+  type: chart
+  reloadPeriod: 5000
+  chart:
+    type: advanced-doughnut
+    maxHeight: "150px"
+    maxWidth: "150px"
+    request:
+      service: NvidiaStats
+      method: gpupowerutil
+    label:
+      display: true
+      formatter: template
+      formatterConfig: "{{ value | tofixed(1) }}W"
+    dataConfig:
+      - label: _("Limit")
+        prop: gpuPowerLimit
+        backgroundColor: "#4cd964"
+      - label: _("Usage")
+        prop: gpuPowerDraw
+        backgroundColor: "#ff3b30"
