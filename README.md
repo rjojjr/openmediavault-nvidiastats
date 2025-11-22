@@ -17,3 +17,13 @@ apt install ./openmediavault-nvidiastats-${VERSION}.deb
 ```bash
 apt remove openmediavault-nvidiastats
 ```
+
+## Roadmap
+
+This is a list of features and changes I am planning to implement:
+
+- [ ] Add a widget to display the GPU fan speed
+- [ ] Add support for AMD GPUs
+- [ ] Add charts to diagnostics section
+- [ ] Add multi-GPU support
+- [ ] Add panel to adjust GPU configuration(powerlimit, fanspeed, etc...)
