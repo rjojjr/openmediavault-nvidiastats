@@ -4,6 +4,8 @@ This project is a fork of [routmoute's openmediavault-nvidiastats](https://githu
 
 This plugin adds dashboard widgets to OpenMediaVault to display various Nvidia GPU statistics.
 
+**IMPORTANT** - This project is being expanded & rewritten and has moved [HERE](https://github.com/rjojjr/openmediavault-gpuutils).
+
 ## Build
 
 You can build and package this plugin with the following commands:
