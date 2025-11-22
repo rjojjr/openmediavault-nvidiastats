@@ -23,9 +23,9 @@ data:
       formatter: template
       formatterConfig: "{{ value }}W"
     dataConfig:
-      - label: _("Usage")
+      - label: _("Used")
         prop: gpuPowerDraw
         backgroundColor: "#ff3b30"
-      - label: _("Remaining")
+      - label: _("Available")
         prop: gpuPowerRemaining
         backgroundColor: "#4cd964"
