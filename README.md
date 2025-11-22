@@ -4,6 +4,16 @@ This project is a fork of [routmoute's openmediavault-nvidiastats](https://githu
 
 This plugin adds dashboard widgets to OpenMediaVault to display various Nvidia GPU statistics.
 
+## Build
+
+You can build and package this plugin with the following commands:
+
+```bash
+debuild -us -uc
+cd debian
+dpkg-deb --build openmediavault-nvidiastats
+```
+
 ## Installation
 
 Install the deb package using `apt`:
@@ -12,7 +22,7 @@ Install the deb package using `apt`:
 apt install ./openmediavault-nvidiastats-${VERSION}.deb
 ```
 
-## Uninstallation
+## Uninstall
 
 ```bash
 apt remove openmediavault-nvidiastats
